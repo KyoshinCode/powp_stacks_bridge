@@ -9,7 +9,7 @@ class StacksDemo {
     public static void main(String[] args) {
         DefaultStacksFactory factory = new DefaultStacksFactory();
 
-        stack[] stacks = { factory.GetStandardStack(), factory.GetFalseStack(), factory.GetFIFOStack(),
+        stack[] stacks = {factory.GetStandardStack(), factory.GetFalseStack(), factory.GetFIFOStack(),
                 factory.GetHanoiStack()}; //przeniesienie kodu do nowej linii w momencie, gdy nie jest to potrzebne
 
         for (int i = 1; i < 15; i++)
