@@ -29,5 +29,5 @@ class StacksDemo {
         System.out.println("total rejected is " + ((StackHanoi) stacks[3]).reportRejected());
 
     }
-
+//alt + <- w srodowisku IntelliJ Idea powoduje przelaczanie sie pomiedzy kartami
 }
