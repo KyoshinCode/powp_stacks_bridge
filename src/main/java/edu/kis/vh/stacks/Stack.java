@@ -3,6 +3,8 @@ package edu.kis.vh.stacks;
 public class Stack {
 
     public int total = -1;
+    public static final int NEGATIVE = -1;
+    public static final int POSITIVE = 11;
     private int[] ITEMS = new int[12];
 
     public void push(int i) {
@@ -11,22 +13,22 @@ public class Stack {
     }
 
     public boolean isEmpty() {
-        return total == -1;
+        return total == NEGATIVE;
     }
 
     public boolean isFull() {
-        return total == 11;
+        return total == POSITIVE;
     }
 
     public int top() {
         if (isEmpty())
-            return -1;
+            return NEGATIVE;
         return ITEMS[total];
     }
 
     public int pop() {
         if (isEmpty())
-            return -1;
+            return NEGATIVE;
         return ITEMS[total--];
     }
 

@@ -6,6 +6,8 @@ import edu.kis.vh.stacks.Stack;
 
 class StacksDemo {
 
+    public static final int ITERATOR = 15;
+
     public static void main(String[] args) {
         DefaultStacksFactory factory = new DefaultStacksFactory();
 
@@ -17,7 +19,7 @@ class StacksDemo {
                 Stacks[j].push(i);
 
         java.util.Random rn = new java.util.Random(); //cofniecie wiersza
-        for (int i = 1; i < 15; i++)
+        for (int i = 1; i < ITERATOR; i++)
             Stacks[3].push(rn.nextInt(20));
 
         for (int i = 0; i < Stacks.length; i++) {       //cofniecie wiersza
