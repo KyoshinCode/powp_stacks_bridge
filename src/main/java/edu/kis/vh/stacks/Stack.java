@@ -1,6 +1,6 @@
 package edu.kis.vh.stacks;
 
-public class stack {
+public class Stack {
 
     public int total = -1;
     private int[] ITEMS = new int[12];
