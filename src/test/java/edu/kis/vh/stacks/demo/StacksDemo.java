@@ -18,6 +18,10 @@ class StacksDemo {
         Stack[] Stacks = {factory.getStandardStack(), factory.getFalseStack(), factory.getFIFOStack(),
                 factory.getHanoiStack()}; //przeniesienie kodu do nowej linii w momencie, gdy nie jest to potrzebne
 
+        fillStacks(Stacks);
+        fillHanoiStack(Stacks[3]);
+        printStack(Stacks);
+
         System.out.println("Rejected: " + ((StackHanoi) Stacks[3]).reportRejected());
 
     }
