@@ -6,9 +6,12 @@ public class Stack {
     
     private static final int EMPTY_STACK_INDICATOR = -1;
     private static final int FULL_STACK_INDICATOR = 11;
-    
-    
+
     private int[] items = new int[12];
+
+    public int getTotal() {
+        return total;
+    }
 
     public void push(int i) {
         if (!isFull())
