@@ -16,7 +16,7 @@ public class Stack {
     public int[] getItems() {
         return items;
     }
-    
+
     public void push(int i) {
         if (!isFull())
             getItems()[++total] = i;
