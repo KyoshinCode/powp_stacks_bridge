@@ -7,15 +7,27 @@ public class Stack {
     private static final int EMPTY_STACK_INDICATOR = -1;
     private static final int FULL_STACK_INDICATOR = 11;
 
-    private int[] items = new int[12];
+    private int[] items = new int[12]; // wywolano gettery i settery zamiast bezposredniego odniesienia sie do zmiennej
 
     public int getTotal() {
         return total;
     }
 
+    public void setTotal(int total) {
+        this.total = total;
+    }
+
+    public int[] getItems() {
+        return items;
+    }
+
+    public void setItems(int[] items) {
+        this.items = items;
+    }
+
     public void push(int i) {
         if (!isFull())
-            items[++total] = i;
+            getItems()[++total] = i;
     }
 
     public boolean isEmpty() {
@@ -29,13 +41,13 @@ public class Stack {
     public int top() {
         if (isEmpty())
             return EMPTY_STACK_INDICATOR;
-        return items[total];
+        return getItems()[total];
     }
 
     public int pop() {
         if (isEmpty())
             return EMPTY_STACK_INDICATOR;
-        return items[total--];
+        return getItems(0[total--];
     }
 
 }
