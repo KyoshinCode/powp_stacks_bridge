@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class StackTest {
+    //TODO Add more test like StackHanoiTests
 
     @Test public void testPush() {
         Stack stackObj = new Stack();
