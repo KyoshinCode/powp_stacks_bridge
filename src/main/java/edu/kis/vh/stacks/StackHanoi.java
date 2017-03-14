@@ -11,8 +11,16 @@ public class StackHanoi extends Stack {
     @Override
     public void push(int in) {
         if (!isEmpty() && in > top())
-            totalRejected++;
+            setTotalRejected(getTotalRejected() + 1);
         else
             super.push(in);
+    }
+
+    public int getTotalRejected() {
+        return totalRejected;
+    }
+
+    public void setTotalRejected(int totalRejected) {
+        this.totalRejected = totalRejected;
     }
 }
