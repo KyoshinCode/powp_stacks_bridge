@@ -4,7 +4,7 @@ import edu.kis.vh.stacks.Stack;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class stackTest {
+public class StackTest {
 
     @Test public void testPush() {
         Stack stackObj = new Stack();
