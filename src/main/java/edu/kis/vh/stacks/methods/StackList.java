@@ -1,8 +1,8 @@
 package edu.kis.vh.stacks.methods;
 
-import edu.kis.vh.stacks.IStack;
+import static edu.kis.vh.stacks.IStack.EMPTY_STACK_INDICATOR;
 
-public class StackList implements IStack{
+public class StackList implements Istack{
 
 	Node last;
 	int i;
