@@ -6,7 +6,7 @@ import edu.kis.vh.stacks.Stack;
 
 class StacksDemo {
 
-    public static final int ITERATOR = 15;
+    private static final int ITERATOR = 15;
 
 
     public static void main(String[] args) {

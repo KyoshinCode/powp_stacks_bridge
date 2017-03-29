@@ -3,7 +3,7 @@ package edu.kis.vh.stacks;
 public class Stack {
 
     private int total = EMPTY_STACK_INDICATOR;
-    
+
     private static final int EMPTY_STACK_INDICATOR = -1;
     private static final int FULL_STACK_INDICATOR = 11;
 
