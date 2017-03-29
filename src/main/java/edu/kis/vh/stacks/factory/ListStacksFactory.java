@@ -10,7 +10,7 @@ import edu.kis.vh.stacks.methods.StackList;
  * Created by RFran on 30.03.2017.
  */
 
-public class StackListFactory implements IStacksFactory {
+public class ListStacksFactory implements IStacksFactory {
 
     @Override
     public Stack getStandardStack() {

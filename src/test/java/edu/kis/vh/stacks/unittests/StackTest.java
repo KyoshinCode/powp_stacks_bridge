@@ -59,7 +59,7 @@ public class StackTest {
 
     @Test public void testPop() {
         IStack IstackObj = new Stack();
-        final int EMPTY_STACK_VALUE = -1;
+        final int EMPTY_STACK_VALUE = 0;
 
         int result = IstackObj.pop();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
