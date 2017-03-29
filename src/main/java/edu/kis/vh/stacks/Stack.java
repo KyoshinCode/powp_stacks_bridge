@@ -1,44 +1,48 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.list.StackList;
+
+/**
+ * Class implementing functionality of stack
+ */
 public class Stack {
 
-    private StackArray stackArray;
+    private StackList stackList;
 
-    public Stack(StackArray stackArray) {
-        this.stackArray = stackArray;
+    public Stack(StackList stackList) {
+        this.stackList = stackList;
     }
 
     public Stack(){
-        this.stackArray = new StackArray();
+        this.stackList = new StackList();
     }
 
     public void push(int i) {
-        stackArray.push(i);
+        stackList.push(i);
     }
 
     public boolean isEmpty() {
-        return stackArray.isEmpty();
+        return stackList.isEmpty();
     }
 
     public boolean isFull() {
-        return stackArray.isFull();
+        return stackList.isFull();
     }
 
     public int top() {
-        return stackArray.top();
+        return stackList.top();
     }
 
     public int pop() {
-        return stackArray.pop();
-    }
-
-    public int getTotal() {
-        return stackArray.getTotal();
-    }
-
-    public int[] getItems() {
-        return stackArray.getItems();
+        return stackList.pop();
     }
 
 
 }
+
+/*
+InteliJ IDEA
+Refactor->Rename
+Navigate->Declaration Ctrl + B
+Navigate->Implementation Ctrl + Alt + B
+*/
