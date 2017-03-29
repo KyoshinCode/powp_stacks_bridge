@@ -1,10 +1,12 @@
 package edu.kis.vh.stacks.methods;
 
-public class StackArray {
+import edu.kis.vh.stacks.IStack;
+
+public class StackArray implements IStack{
 
     private int total = EMPTY_STACK_INDICATOR;
 
-    private static final int EMPTY_STACK_INDICATOR = -1;
+
     private static final int FULL_STACK_INDICATOR = 11;
 
     private int[] items = new int[12]; // wywolano gettery i settery zamiast bezposredniego odniesienia sie do zmiennej

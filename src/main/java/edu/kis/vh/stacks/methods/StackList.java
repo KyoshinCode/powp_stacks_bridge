@@ -1,6 +1,8 @@
 package edu.kis.vh.stacks.methods;
 
-public class StackList {
+import edu.kis.vh.stacks.IStack;
+
+public class StackList implements IStack{
 
 	Node last;
 	int i;
@@ -25,13 +27,13 @@ public class StackList {
 
 	public int top() {
 		if (isEmpty())
-			return -1;
+			return EMPTY_STACK_INDICATOR;
 		return last.value;
 	}
 
 	public int pop() {
 		if (isEmpty())
-			return -1;
+			return EMPTY_STACK_INDICATOR;
 		int ret = last.value;
 		last = last.prev;
 		return ret;
