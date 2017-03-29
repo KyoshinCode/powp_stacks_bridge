@@ -55,3 +55,8 @@ Refactor->Rename
 Navigate->Declaration Ctrl + B
 Navigate->Implementation Ctrl + Alt + B
 */
+
+/*
+Uzycie open declaration wraz z kliknieciem myszka na metodzie przenosi w miejsce jej deklaracji
+QuickType daje nam bardzo dobry wglad na deklaracje w danym pliku
+ */
