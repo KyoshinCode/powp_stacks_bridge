@@ -1,5 +1,6 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.methods.StackArray;
 import edu.kis.vh.stacks.methods.StackList;
 
 /**
@@ -11,41 +12,39 @@ public class Stack implements IStack {
        Funkcjonalnosc pozostaje bez zmian, a kod jest "czytelniejszy"
      */
 
-    private StackList stackList;
+    private IStack stack;
 
-    public Stack(StackList stackList) {
-        this.stackList = stackList;
+    public Stack(StackList stack) {
+        this.stack = stack;
+    }
+
+    public Stack(StackArray stack){
+        this.stack = stack;
     }
 
     public Stack(){
-        this.stackList = new StackList();
+        this.stack = new StackList();
     }
 
-    @Override
     public void push(int i) {
-        stackList.push(i);
+        stack.push(i);
     }
 
-    @Override
     public boolean isEmpty() {
-        return stackList.isEmpty();
+        return stack.isEmpty();
     }
 
-    @Override
     public boolean isFull() {
-        return stackList.isFull();
+        return stack.isFull();
     }
 
-    @Override
     public int top() {
-        return stackList.top();
+        return stack.top();
     }
 
-    @Override
     public int pop() {
-        return stackList.pop();
+        return stack.pop();
     }
-
 
 }
 

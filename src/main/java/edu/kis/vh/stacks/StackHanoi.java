@@ -1,5 +1,6 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.methods.StackArray;
 import edu.kis.vh.stacks.methods.StackList;
 
 public class StackHanoi extends Stack {
@@ -32,5 +33,9 @@ public class StackHanoi extends Stack {
 
     public void setTotalRejected(int totalRejected) {
         this.totalRejected = totalRejected;
+    }
+
+    public StackHanoi(StackArray stackArray) {
+        super(stackArray);
     }
 }
