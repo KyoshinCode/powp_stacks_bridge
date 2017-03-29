@@ -2,69 +2,43 @@ package edu.kis.vh.stacks;
 
 public class Stack {
 
-    private int total = EMPTY_STACK_INDICATOR;
+    private StackArray stackArray;
 
-    private static final int EMPTY_STACK_INDICATOR = -1;
-    private static final int FULL_STACK_INDICATOR = 11;
+    public Stack(StackArray stackArray) {
+        this.stackArray = stackArray;
+    }
 
-    private int[] items = new int[12]; // wywolano gettery i settery zamiast bezposredniego odniesienia sie do zmiennej
+    public Stack(){
+        this.stackArray = new StackArray();
+    }
+
+    public void push(int i) {
+        stackArray.push(i);
+    }
+
+    public boolean isEmpty() {
+        return stackArray.isEmpty();
+    }
+
+    public boolean isFull() {
+        return stackArray.isFull();
+    }
+
+    public int top() {
+        return stackArray.top();
+    }
+
+    public int pop() {
+        return stackArray.pop();
+    }
 
     public int getTotal() {
-        return total;
+        return stackArray.getTotal();
     }
 
     public int[] getItems() {
-        return items;
+        return stackArray.getItems();
     }
 
-    /**
-     * Push value to the top of the stack
-     * @param i - integer value for the stack
-     * modifies:items
-     */
-    public void push(int i) {
-        if (!isFull())
-            getItems()[++total] = i;
-    }
-
-    /**
-     * Return boolean indicating if stack is empty
-     * @return boolean - true == stack is empty, false if its not
-     * modifies:none
-     */
-    public boolean isEmpty() {
-        return total == EMPTY_STACK_INDICATOR;
-    }
-
-    /**
-     * Returns boolean indicating if stack is full
-     * @return boolean - true == stack is full, false if its not
-     * modifies:none
-     */
-    public boolean isFull() {
-        return total == FULL_STACK_INDICATOR;
-    }
-
-    /**
-     * returns last value on stack, stack last unmodified
-     * @return last value on the stack (top one)
-     * modifies:none
-     */
-    public int top() {
-        if (isEmpty())
-            return EMPTY_STACK_INDICATOR;
-        return getItems()[total];
-    }
-
-    /**
-     * takes value on the top of the stack, modifies stack
-     * @return last value of the stack (top one)
-     * modifies:items
-     */
-    public int pop() {
-        if (isEmpty())
-            return EMPTY_STACK_INDICATOR;
-        return getItems()[total--];
-    }
 
 }
