@@ -1,4 +1,4 @@
-package edu.kis.vh.stacks.list;
+package edu.kis.vh.stacks.methods;
 
 public class Node {
 
