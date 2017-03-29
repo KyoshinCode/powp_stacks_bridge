@@ -1,14 +1,15 @@
 package edu.kis.vh.stacks.factory;
 
-import edu.kis.vh.stacks.Stack;
+import edu.kis.vh.stacks.IStack;
 import edu.kis.vh.stacks.StackFIFO;
 import edu.kis.vh.stacks.StackHanoi;
 
 public interface IStacksFactory {
 
-     Stack getStandardStack();
+     IStack getStandardStack();
 
-     Stack getFalseStack();
+
+     IStack getFalseStack();
 
      StackFIFO getFIFOStack();
 
